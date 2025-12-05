@@ -1,0 +1,217 @@
+.HomeContainer {
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    text-align: center;
+    padding: 15px;
+}
+
+.FirstSection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.searcheng {
+    width: 693px;
+    height: 55px;
+    left: 359px;
+    top: 63px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 275;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    border-style: none;
+    color: #000000;
+
+
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    padding-bottom: 25px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 50px;
+
+    text-align: center;
+    background-color: #2972B5;
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.FirstSection p {
+    width: 133px;
+    height: 36px;
+    left: 1241px;
+    top: 75px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 56px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #625757;
+
+}
+
+.SecondSetion {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    gap: 50px;
+
+}
+
+.h3secondSection1,
+.h3secondSection2,
+.h3secondSection3,
+.h3secondSection4 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 520;
+    font-size: 24px;
+    /* line-height: 96px; */
+    text-align: center;
+    color: #000000;
+
+
+}
+
+.Box01 {
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+    background-color: #8FB1A3;
+    padding-top: 55px;
+    padding-bottom: 40px;
+    padding-left: 42px;
+    padding-right: 65px;
+    width: 200px;
+    height: 200px;
+    background: #8FB1A3;
+    border-radius: 8px;
+    
+}
+
+.Box02 {
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+    background-color: #C0B5B5;
+    border-radius: 20px;
+    padding-top: 55px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.Box03 {
+    border-radius: 8px;
+    opacity: 1;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+    background-color: #007AFF;
+    padding-top: 45px;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 200px;
+    height: 200px;
+
+
+}
+
+.Box04 {
+    border-radius: 8px;
+    background-color: #8F4848;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 200px;
+    height: 200px;
+}
+
+.Box05 {
+    background-color: #651414;
+    width: 1054px;
+    height: 80px;
+    background: #29274C;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 20px;
+
+}
+
+.polyGon{
+    margin-left: 950px;
+    margin-top: -70px;
+}
+
+.h3thirdSection {
+    width: 915px;
+    height: 36px;
+    left: 406px;
+    top: 469px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    /* identical to box height */
+    text-align: center;
+    line-height: 66px;
+    color: #FFFFFF;
+    margin-left: 50px;
+}
+
+.BoxSection {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: -20px;
+}
+
+.cardBox {
+    width: 225px;
+    height: 250px;
+    left: 613px;
+    top: 584px;
+
+    background: #EBDFDF;
+    /* Drop Shadowfor me */
+    box-shadow: 6px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.card-image1,
+.card-image2,
+.card-image3,
+.card-image4 {
+    left: 43.54%;
+    right: 42.57%;
+    top: 68.2%;
+    bottom: 22.27%;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}

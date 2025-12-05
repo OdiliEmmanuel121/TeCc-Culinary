@@ -1,0 +1,79 @@
+.SidebarContainer {
+    width: 20%;
+    /* Adjust the width as needed */
+    height: 100vh;
+    /* Make it take up the full viewport height */
+    position: fixed;
+    /* Keep it fixed in place while the content scrolls */
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    /* Dark background for visibility */
+    padding: 20px 0;
+    filter: drop-shadow(6px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.PICTURELOGO {
+    width: 100px;
+    /* Set a reasonable size for the logo */
+    height: auto;
+    display: block;
+    /* Ensures proper margin and centering */
+    margin: 0 auto 30px auto;
+    /* Center it horizontally and add space below */
+    
+}
+
+/* --- Navigation Links Styling --- */
+
+.InnerElement {
+    /* This container holds the individual link item */
+    margin-bottom: 5px;
+}
+
+.sidebar .new {
+    /* Styles for the Link component (which is the actual clickable element) */
+    display: flex;
+    /* Aligns the icon and text horizontally */
+    align-items: center;
+    padding: 10px 40px;
+    text-decoration: none;
+    /* Remove underline from links */
+    color: #333435;
+    /* Light text color */
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: sans-serif;
+    gap: 10px;
+    font-weight: 600;
+
+}
+
+.sidebar .new:hover {
+    /* Hover effect for better user experience */
+    /* background-color: rgba(103, 159, 210, 1); */
+    color: rgb(255, 255, 255);
+    background: #120101;
+    border-radius: 10px;
+}
+
+.sidebar .new img {
+    /* Styles for the icon image inside the link */
+    width: 24px;
+    /* Icon size */
+    height: 24px;
+    margin-right: 15px;
+    /* Space between icon and text */
+    /* If your icons are SVGs or have specific color needs, you might need to adjust their fill/stroke here */
+}
+
+/* --- Mobile Menu Icon Styling (optional/basic) --- */
+
+.bar {
+    padding: 10px 20px;
+    color: #ecf0f1;
+    cursor: pointer;
+
+}
+
+

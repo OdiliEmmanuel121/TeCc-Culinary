@@ -76,4 +76,89 @@
 
 }
 
+/* --- Mobile Styles: Applies when screen is 768px wide or smaller --- */
+@media (max-width: 768px) {
+
+    /* 1. Sidebar Container: Hide by default, make it a full-screen overlay when open */
+    .SidebarContainer {
+        /* Mobile-friendly dimensions */
+        width: 80%;
+        /* Takes up most of the screen width */
+        max-width: 300px;
+        /* Optional: limit max size on larger tablets */
+        height: 100vh;
+
+        /* Positioning & Visibility */
+        position: fixed;
+        top: 0;
+        /* Start hidden off-screen to the left */
+        left: -80%;
+        /* Or -100% of max-width if using max-width */
+
+        /* Transition for smooth opening/closing effect */
+        transition: left 0.3s ease-in-out;
+
+        /* Ensure it sits above the main content when open */
+        z-index: 1000;
+
+        /* Keep existing styles */
+        background-color: #ffffff;
+        padding: 20px 0;
+        filter: drop-shadow(6px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    /* 2. State when the sidebar is OPEN (needs a class toggled by JavaScript) */
+    .SidebarContainer.open {
+        left: 0;
+        /* Slide into view */
+    }
+
+    /* 3. Logo/Image Adjustments */
+    .PICTURELOGO {
+        width: 80px;
+        /* Slightly smaller logo for mobile */
+        margin-bottom: 20px;
+    }
+
+    /* 4. Navigation Links Adjustments */
+    .sidebar .new {
+        /* Increase padding for easier tapping */
+        padding: 12px 20px;
+        font-size: 16px;
+        /* Slightly smaller font */
+    }
+
+    .sidebar .new img {
+        margin-right: 10px;
+        /* Less space between icon and text */
+    }
+
+    /* 5. Menu Button (for the toggle) */
+    .bar {
+        display: block;
+        /* Make the menu icon visible */
+        position: fixed;
+        /* Keep it fixed at the top */
+        top: 10px;
+        left: 10px;
+        color: #333435;
+        /* Choose a color that stands out on the page background */
+        z-index: 1001;
+        /* Must be above the sidebar */
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        /* Make the icon/text large enough */
+        padding: 5px;
+    }
+}
+
+/* --- End of Mobile Styles --- */
+
+/* Add this to your original CSS if you want the .bar to be hidden on desktop */
+/* .bar {
+    display: none;
+} */
+  
 

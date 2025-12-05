@@ -1,18 +1,21 @@
+/* --- Desktop/Default Styles (Applies to all sizes, then overridden) --- */
 .SidebarContainer {
     width: 20%;
-    /* Adjust the width as needed */
+    /* Keep the fixed desktop width */
     height: 100vh;
-    /* Make it take up the full viewport height */
     position: fixed;
-    /* Keep it fixed in place while the content scrolls */
     top: 0;
-    left: 0;
+    left: 0; 
+    /* The rest of your desktop styles for background, shadow, etc. */
     background-color: #ffffff;
-    /* Dark background for visibility */
     padding: 20px 0;
     filter: drop-shadow(6px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+/* Hide the hamburger button by default on desktop */
+.bar {
+    display: none; 
+}
 .PICTURELOGO {
     width: 100px;
     /* Set a reasonable size for the logo */
@@ -21,7 +24,7 @@
     /* Ensures proper margin and centering */
     margin: 0 auto 30px auto;
     /* Center it horizontally and add space below */
-    
+
 }
 
 /* --- Navigation Links Styling --- */
@@ -75,6 +78,7 @@
     cursor: pointer;
 
 }
+
 
 /* --- Mobile Styles: Applies when screen is 768px wide or smaller --- */
 @media (max-width: 768px) {
@@ -161,4 +165,3 @@
     display: none;
 } */
   
-

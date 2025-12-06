@@ -19,29 +19,30 @@ const Home = () => {
     return (
         <div className='HomeContainer'>
             <div className='FirstSection'>
+                <h3> Hello Toyin </h3>
                 <input type="Search" placeholder='8, Modupe close, Mubarak bustop, Akute  items' className='searcheng' />
                 <a href="#" className="button"> Submit </a>
-                <p> Hello Toyin </p>
+
             </div>
             <div className='SecondSetion'>
                 <Box className='Box01' >
                     {/* <Restaurant /> */}
-                    <img src={restu} alt="restu" className='icon1'/>
-                    <h3 className='h3secondSection1'>Resturants</h3>
+                    <img src={restu} alt="restu" className='icon1' />
+                    <h3>Resturants</h3>
                 </Box>
                 <Box className='Box02' >
                     {/* <LocalBarIcon /> */}
-                    <img src={bar} alt="bar" className='icon2'/>
+                    <img src={bar} alt="bar" className='icon2' />
                     <h3 className='h3secondSection2' >Bar</h3>
                 </Box>
                 <Box className='Box03'>
                     {/* <StoreIcon /> */}
-                    <img src={superma} alt="superma" className='icon3'/>
+                    <img src={superma} alt="superma" className='icon3' />
                     <h3 className='h3secondSection3'>Supermarket</h3>
                 </Box>
                 <Box className='Box04'>
                     {/* <LocalHospitalIcon /> */}
-                    <img src={pharm} alt="pharm" className='icon4'/>
+                    <img src={pharm} alt="pharm" className='icon4' />
                     <h3 className='h3secondSection4'>Pharmarcy</h3>
                 </Box>
             </div>
@@ -50,7 +51,7 @@ const Home = () => {
                 <Box className='Box05'>
                     <h3 className='h3thirdSection'>Enjoy  1 month free delievery and reduce fees with TeCc food when you refer</h3>
                 </Box>
-                <img src={Polygon1} alt="Polygon1" className='polyGon'/>
+                <img src={Polygon1} alt="Polygon1" className='polyGon' />
             </div>
 
             <div>
@@ -63,7 +64,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                     <div className='cardBox'>
+                    <div className='cardBox'>
                         <div className="card1">
                             <img src={amala} alt="Beans and Plantain" className="card-image2" />
                             <div className="card-content1">
@@ -71,7 +72,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                     <div className='cardBox'>
+                    <div className='cardBox'>
                         <div className="card1">
                             <img src={semo} alt="Beans and Plantain" className="card-image3" />
                             <div className="card-content1">
@@ -79,7 +80,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                     <div className='cardBox'>
+                    <div className='cardBox'>
                         <div className="card1">
                             <img src={amalaa} alt="Beans and Plantain" className="card-image4" />
                             <div className="card-content1">

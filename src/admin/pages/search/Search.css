@@ -1,0 +1,330 @@
+.SearchContainer {
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    text-align: center;
+    padding: 15px;
+}
+
+.SeaFirstSection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Seasearcheng {
+    width: 693px;
+    height: 50px;
+    left: 359px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 275;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    border-style: none;
+    color: #000000;
+    margin-top: -2.5px;
+
+
+}
+
+.SearchIcon {
+    margin-top: 15px;
+    left: 200%;
+}
+
+.Seabutton {
+    width: 150px;
+    height: 50px;
+    padding-bottom: 25px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 50px;
+
+    text-align: center;
+    background-color: #007bff;
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.SeaFirstSection h3 {
+    width: 133px;
+    height: 36px;
+    left: 1241px;
+    top: 75px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 56px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #625757;
+
+}
+
+.SeaBoxSection {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.SeacardBox {
+    width: 225px;
+    height: 180px;
+    left: 605px;
+    top: 146px;
+
+    background: #EBDFDF;
+    /* Drop Shadowfor me */
+    box-shadow: 6px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.Seacard-image1,
+.Seacard-image4 {
+    left: 43.54%;
+    right: 42.57%;
+    top: 68.2%;
+    bottom: 200.27%;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+
+.Seacard-image2,
+.Seacard-image3 {
+    left: 43.54%;
+    right: 42.57%;
+    top: 68.2%;
+    bottom: 22.27%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.SeaCardbox2,
+.SeaCardbox3 {
+    width: 511px;
+    height: 506px;
+    left: 334px;
+    top: 362px;
+
+    background: #D9D9D9;
+    border-radius: 20px;
+
+}
+
+.Spread1,
+.Spread2,
+.Spread3,
+.Spread4,
+.Spread5 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.Spread3 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.Spread6 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+
+.Spread1 h3,
+.Spread2 h3,
+.Spread3 h3,
+.Spread4 h3,
+.Spread5 h3,
+.Spread6 h3 {
+    margin-top: 45px;
+}
+
+.SpreadIon1,
+.SpreadIon2,
+.SpreadIon3,
+.SpreadIon4,
+.SpreadIon5,
+.SpreadIon6 {
+    width: 20px;
+    height: 20px;
+    margin-top: 50px;
+}
+
+
+.SeaThirdSection {
+    margin-top: -30px;
+}
+
+@media (max-width: 768px) {
+
+    .SearchContainer {
+        /* Full width and no left margin on mobile */
+        width: 100%;
+        margin: 0;
+        padding: 15px 10px;
+    }
+
+    /* --- Search Input & Button Section --- */
+
+    .SeaFirstSection {
+        flex-direction: column;
+        /* Stack the elements */
+        align-items: flex-start;
+        /* Align all items to the start (left) */
+        gap: 15px;
+        margin-top: -10px;
+    }
+
+    .SearchIcon {
+        /* margin-top: 25px; */
+        margin-left: 430px;
+
+    }
+
+    .Seasearcheng {
+        width: 100%;
+        height: 35px;
+        /* Smaller, easier to tap */
+        font-size: 16px;
+        text-align: left;
+        /* Align placeholder left */
+        background: transparent;
+        border: none;
+        margin-top: -60px;
+    }
+
+    .Seabutton {
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        font-size: 17px;
+        padding: 0;
+        /* Remove padding-bottom: 25px; */
+        border-radius: 8px;
+        /* Match input styling */
+        margin-top: 5px;
+        background-color: #007bff;
+    }
+
+    .SeaFirstSection h3 {
+        width: auto;
+        font-size: 22px;
+        line-height: 1.2;
+        margin: 0;
+        margin-top: 15px;
+        color: #333435;
+        margin-left: 300px;
+        /* Darker, professional text */
+    }
+
+    .SearchIcon {
+        /* If the icon is part of the first section, adjust its margin/display */
+        display: none;
+        /* Hide or integrate into the input field for cleanliness */
+    }
+
+    /* --- Card/Box Section --- */
+
+    .SeaBoxSection {
+        /* Ensure wrapping is active */
+        flex-wrap: wrap;
+        gap: 15px;
+
+        /* Smaller gap on mobile */
+    }
+
+    .SeacardBox {
+        /* Cards take up about half the screen width on mobile */
+        width: 45%;
+        max-width: none;
+        /* Override desktop max-width */
+        height: 120px;
+        /* Reduced height for smaller screen */
+        height: 70%;
+    }
+
+    .SeaCardbox2,
+    .SeaCardbox3 {
+        /* Full width on mobile */
+        width: 100%;
+        max-width: none;
+        border-radius: 10px;
+        /* Smaller border radius for mobile */
+        gap: 10px;
+        height: 100%;
+    }
+
+    /* --- Spread Sections (List Items) --- */
+
+    .Spread1,
+    .Spread2,
+    .Spread3,
+    .Spread4,
+    .Spread5,
+    .Spread6 {
+        /* Stack list items vertically on mobile */
+        /* flex-direction: column; */
+        align-items: center;
+
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .Spread1 h3,
+    .Spread2 h3,
+    .Spread3 h3,
+    .Spread4 h3,
+    .Spread5 h3,
+    .Spread6 h3 {
+        margin-top: 0;
+        /* Remove excess top margin when stacked */
+        font-size: 18px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .SpreadIon1,
+    .SpreadIon2,
+    .SpreadIon3,
+    .SpreadIon4,
+    .SpreadIon5,
+    .SpreadIon6 {
+        margin-top: 0;
+    }
+
+    .Seacard-image1,
+    .Seacard-image2,
+    .Seacard-image3,
+    .Seacard-image4 {
+        width: 190px;
+        height: 170px;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+        /* Adjust vertical position */
+        display: block;
+        margin-left: 10px;
+
+    }
+}

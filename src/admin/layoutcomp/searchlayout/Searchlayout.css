@@ -1,5 +1,6 @@
-.SearchlayoutContainer{
-      width: 725px;
+.SearchlayoutContainer {
+    max-width: none;
     min-height: 100vh;
-    background-color: rgb(78, 2, 66);
+    display: flex;
+    justify-content: space-between;
 }

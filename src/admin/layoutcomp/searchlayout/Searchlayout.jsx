@@ -1,4 +1,4 @@
-import React from 'react'
+import './Searchlayout.css'
 import Sidebar from '../../common/sidebar/Sidebar'
 import Search from '../../pages/search/Search'
 

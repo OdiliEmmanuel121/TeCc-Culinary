@@ -2,41 +2,52 @@ import './Sidebar.css'
 import logoImage from '../../../assets/logo-image.png'
 import { Link } from 'react-router-dom'
 import Data from '../sidebar/data/Data'
-import { useState } from 'react' // 1. Import useState
+import { useState } from 'react'
 
 const Sidebar = () => {
-    // 2. State to manage the sidebar's open/closed status
-    const [isOpen, setIsOpen] = useState(false); 
+    const [isOpen, setIsOpen] = useState(false);
 
-    // 3. Function to toggle the state
+    // Function to toggle the state (used by the hamburger button)
     const toggleSidebar = () => {
         setIsOpen(!isOpen);
+    };
+
+    // 💡 NEW: Function to explicitly close the state (used by backdrop and links)
+    const closeSidebar = () => {
+        setIsOpen(false);
     };
 
     return (
         <>
             {/* Hamburger Button for Mobile View */}
-            {/* The 'bar' div now serves as the button and displays the hamburger icon */}
             <button className='bar' onClick={toggleSidebar}>
-                {/* Use a simple text character for the hamburger icon */}
                 ☰
-            </button> 
+            </button>
 
-            {/* 4. Conditionally add the 'open' class based on the state */}
+            {/* 💡 NEW: Sidebar Overlay/Backdrop */}
+            {/* This only renders when the sidebar is open, and clicking it closes the sidebar */}
+            {isOpen && (
+                <div
+                    className='SidebarOverlay'
+                    onClick={closeSidebar} // <-- This closes the sidebar when main page is clicked
+                />
+            )}
+
+            {/* Sidebar Container: Class 'open' is conditional */}
             <div className={`SidebarContainer ${isOpen ? 'open' : ''}`}>
                 <img src={logoImage} alt="logoImage" className='PICTURELOGO' />
-                
-                {/* Optional: Add a close button (X) inside the sidebar for mobile */}
-                <button className='close-btn' onClick={toggleSidebar}>
-                    &times; {/* HTML entity for multiplication sign / Close X */}
+
+                {/* Optional: Close button inside the sidebar (changed to closeSidebar) */}
+                <button className='close-btn' onClick={closeSidebar}>
+                    &times;
                 </button>
-                
+
                 {Data.map((item) => {
                     return (
                         <div key={item.id} className='InnerElement'>
                             <div className='sidebar'>
-                                {/* Add onClick={toggleSidebar} to close the menu when a link is clicked */}
-                                <Link to={item.path} className='new' onClick={toggleSidebar}>
+                                {/* Use closeSidebar to ensure the menu closes when navigating */}
+                                <Link to={item.path} className='new' onClick={closeSidebar}>
                                     <img src={item.icon} alt="icon-image" />
                                     <div>{item.heading}</div>
                                 </Link>

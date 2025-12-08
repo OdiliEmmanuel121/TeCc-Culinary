@@ -12,6 +12,7 @@
     filter: drop-shadow(6px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+
 /* Hide the hamburger button by default on desktop */
 .bar {
     display: none; 
@@ -80,10 +81,8 @@
 }
 
 
-/* --- Mobile Styles: Applies when screen is 768px wide or smaller --- */
-@media (max-width: 768px) {
 
-    /* 1. Sidebar Container: Hide by default, make it a full-screen overlay when open */
+@media (max-width: 768px) {
     .SidebarContainer {
         /* Mobile-friendly dimensions */
         width: 80%;
@@ -91,9 +90,8 @@
         max-width: 300px;
         /* Optional: limit max size on larger tablets */
         height: 60%;
-
-
-        /* Positioning & Visibility */
+        height: 100vh;
+        /* Positioning& Visibility */
         position: fixed;
         top: 0;
         /* Start hidden off-screen to the left */
@@ -101,13 +99,9 @@
         /* Or -100% of max-width if using max-width */
 
         /* Transition for smooth opening/closing effect */
-        transition: left 0.3s ease-in-out;
-
-        /* Ensure it sits above the main content when open */
-        z-index: 1000;
-
-        /* Keep existing styles */
-        background-color: #f1ebeb;
+        transition: left 0.3s ease-in-out;        /* Ensure it sits above the main content when open */
+        z-index: 1000;        background-color: #f1ebeb;
+        background-color: #ffffff;
         padding: 20px 0;
         filter: drop-shadow(6px 4px 4px rgba(0, 0, 0, 0.25));
     }

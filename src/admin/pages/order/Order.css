@@ -1,0 +1,260 @@
+.OrderContainer {
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    text-align: center;
+    padding: 15px;
+}
+
+.OrderFirstSection {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 5%;
+    margin-top: 10px;
+}
+
+.OrderFirstSection h2 {
+    width: 133px;
+    height: 36px;
+    left: 1241px;
+    top: 75px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 56px;
+    /* identical to box height */
+    text-align: center;
+
+    color: #625757;
+}
+
+.OrderFirstSection h3 {
+    /* width: 133px;
+    height: 36px;
+    font-style: normal;
+    font-weight: 300; */
+    font-size: 24px;
+    line-height: 56px;
+    /* identical to box height */
+    text-align: center;
+    color: #625757;
+}
+
+.OrderCardBoxContainer {
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 60px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-top: -2.5px;
+    /* margin-left: 200px; */
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+.FBox01 {
+    background-color: #575252;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.FBox02,
+.FBox03 {
+
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.FBoxtext01 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 46px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+.FBoxtext02,
+.FBoxtext03 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 46px;
+    text-align: center;
+    color: #585B59;
+    text-decoration: none;
+}
+
+.OrderSecondSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.OrderBox1 {
+    width: 988px;
+    height: 500px;
+    left: 398px;
+    background: #D9D9D9;
+    border-radius: 20px;
+    padding: 100px;
+}
+
+.OderBoxh4 {
+    margin-top: 30px;
+    width: 226px;
+    height: 29px;
+    margin-left: 280px;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    justify-content: center;
+    text-align: center;
+
+    color: #585B59;
+}
+
+.OrderButton {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 38px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #1711C7;
+    border-radius: 3px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+@media (max-width: 768px) {
+
+    /* 1. Main Container Adjustment */
+    .OrderContainer {
+        /* Full width and remove sidebar margin */
+        width: 100%;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    /* 2. Order First Section (Header/Title) */
+    .OrderFirstSection {
+        /* Stack titles/elements vertically */
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin-top: 5px;
+    }
+
+    .OrderFirstSection h2,
+    .OrderFirstSection h3 {
+        /* Reduce font size for mobile readability */
+        font-size: 20px;
+        line-height: 1.2;
+        height: auto;
+        width: auto;
+    }
+
+    /* 3. Responsive Filter/Tabs Container */
+    .OrderCardBoxContainer {
+        /* Remove horizontal padding */
+        padding-left: 5px;
+        padding-right: 5px;
+        height: auto;
+        margin-top: 10px;
+        /* Allow items to wrap and fill space */
+        display: flex;
+        flex-wrap: wrap;
+        /* Important: Allows items to wrap onto a new line */
+        justify-content: space-around;
+        /* Distribute space evenly */
+        gap: 10px;
+        /* Reduced gap for mobile */
+    }
+
+    /* 4. Individual Filter/Tab Sizing */
+    .FBox01,
+    .FBox02,
+    .FBox03 {
+        /* Make each box take up roughly a third of the container, allowing wrap */
+        flex: 1 1 30%;
+        box-sizing: border-box;
+        /* Include padding/border in the 30% width */
+        margin-top: 5px;
+        margin-bottom: 5px;
+        /* Add some padding back for visual space inside the box */
+        padding: 5px 10px;
+        min-width: 100px;
+        /* Prevents them from getting too squished */
+    }
+
+    .FBoxtext01,
+    .FBoxtext02,
+    .FBoxtext03 {
+        font-size: 16px;
+        /* Smaller text for mobile */
+        line-height: 1.2;
+    }
+
+    /* 5. Second Section (Main Box) */
+    .OrderSecondSection {
+        margin-top: 20px;
+    }
+
+    .OrderBox1 {
+        /* Main content box takes up most of the screen width */
+        width: 95%;
+        height: auto;
+        padding: 30px;
+        padding-bottom: 90px;
+        margin-top: 20px;
+        /* Reduced padding for mobile */
+    }
+
+    .OderBoxh4 {
+        /* Center text and reduce font size */
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+    }
+
+    /* 6. Responsive Button */
+    .OrderButton {
+        /* Make the button fill the available width */
+        width: 90%;
+        max-width: 300px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 20px;
+        display: block;
+        border-radius: 5px;
+        margin-left: 60px;
+        /* Ensures width setting works */
+    }
+}

@@ -211,207 +211,207 @@
 
 }
 
-/* ------------------------------------------------ */
-/* 📱 Mobile Design Overrides (Max-Width: 768px)  */
-/* ------------------------------------------------ */
 @media (max-width: 768px) {
 
-    /* 1. Main Container: Adapt to Mobile Viewport */
+    /* 1. Adjust HomeContainer for Full Screen Width */
     .HomeContainer {
+        /* On mobile, remove the 20% margin from the left */
         width: 100%;
-        /* Take full screen width */
         margin-left: 0;
-        /* Remove offset for hidden sidebar */
-        padding: 10px 15px;
-        /* Add comfortable padding */
-        text-align: left;
-        /* Align content left for reading ease */
+        padding: 10px;
+        /* Reduce padding slightly */
     }
 
-    /* 2. Top Section: Stack items vertically (Heading, Search Bar, Button) */
+    /* 2. Stack elements in the FirstSection */
     .FirstSection {
         flex-direction: column;
-        /* Stack the elements */
-        align-items: flex-start;
-        /* Align all items to the start (left) */
-        gap: 15px;
-        /* Consistent vertical spacing */
-    }
-
-    /* Heading Style */
-    .FirstSection h3 {
-        width: auto;
-        font-size: 22px;
-        line-height: 1.2;
-        margin: 0;
-        margin-top: 15px;
-        color: #333435;
-        margin-left: 300px;
-        /* Darker, professional text */
-    }
-
-    /* 3. Search Input Styling (Requires HTML to wrap input/icon) */
-
-    /* Input Wrapper (Add this class to a wrapping div around your search icon and input) */
-    .InputWrapper {
-        display: flex;
+        /* Stacks search and button vertically */
         align-items: center;
-        width: 100%;
-        box-sizing: border-box;
-
-        /* Professional Look */
-        border: 1px solid #E0E0E0;
-        background: #F8F8F8;
-        border-radius: 8px;
-        /* Slightly rounded corners */
-        padding: 8px 10px;
-        box-shadow: none;
-        /* Remove heavy shadow */
+        /* Centers stacked items */
+        gap: 10px;
     }
 
     .searcheng {
-        width: 100%;
-        height: 35px;
-        /* Smaller, easier to tap */
-        font-size: 16px;
-        text-align: left;
-        /* Align placeholder left */
-        background: transparent;
-        border: none;
-        margin-top: 0;
-    }
+        /* Make the search bar take up most of the mobile width */
+        width: 90%;
+        max-width: 400px;
 
-    /* 4. Button: Full width and block display */
-    .button {
-        width: 100%;
-        height: 45px;
-        line-height: 45px;
-        font-size: 17px;
-        padding: 0;
-        /* Remove padding-bottom: 25px; */
-        border-radius: 8px;
-        /* Match input styling */
+        /* Prevent it from being too wide on slightly larger devices */
         margin-top: 5px;
-        background-color: #007bff;
     }
 
-    /* 5. Second Section (Main Boxes): Two-Column Grid */
+    /* 3. Create the TWO-COLUMN Grid for the Cards */
     .SecondSetion {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        /* Allows cards to wrap to the next row */
-        justify-content: space-between;
-        /* Space out the columns */
+        /* Set up the main card container as a grid */
+        display: grid;
+        /* Define two columns of equal size (1fr) */
+        grid-template-columns: 1fr 1fr;
+        /* Add some gap between the rows and columns */
         gap: 15px;
-        /* Consistent gap */
-        margin-top: 20px;
-        padding: 0 5px;
+        /* Remove the space-evenly justification, as grid handles layout */
+        justify-content: unset;
+        /* Constrain the whole section width for better centering */
+        width: 95%;
+        margin: 20px auto 0;
+        /* Center the entire section horizontally */
     }
 
-    /* Individual Box Styling (2 columns) */
+    /* 4. Adjust the Card (Box) dimensions and padding */
     .Box01,
     .Box02,
     .Box03,
     .Box04 {
-        width: calc(50% - 8px);
-        /* Ensures two fit with gap */
-        height: 150px;
-        /* Uniform height */
-        box-sizing: border-box;
+        /* Make each card fill the available space in its grid cell */
+        width: 100%;
+        /* Set a consistent minimum height for uniformity */
+        min-height: 150px;
+        /* Adjust padding for smaller screens */
+        padding: 30px 10px;
+    }
 
-        /* Reset excessive desktop padding */
-        padding: 15px;
+    /* Remove padding/width overrides from specific boxes to ensure uniformity in the grid */
+    .Box01,
+    .Box02,
+    .Box03,
+    .Box04 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: auto;
+        /* Use auto so grid dictates the width */
+        height: auto;
+    }
+}
 
-        /* Professional Shadow/Radius */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        filter: none;
-        border-radius: 8px;
+/* ------------------------------------------------------------------ */
+/* --- MOBILE VIEW STYLES (Max screen width of 768px) 📱 --- */
+/* ------------------------------------------------------------------ */
 
-        /* Use Flexbox to center content */
-        display: flex;
+@media (max-width: 768px) {
+
+    /* 1. Main Container Adjustment */
+    .HomeContainer {
+        /* Full width and remove sidebar margin */
+        width: 100%;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    /* 2. First Section (Search and Button) Adjustment */
+    .FirstSection {
+        /* Stack search bar and button vertically */
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-
-        /* Optional: Remove specific background colors or standardize them */
-        /* background-color: #8FB1A3; (Keep original colors for now) */
+        gap: 10px;
     }
 
-    /* Box Headings */
-    .SecondSetion h3 {
-        font-size: 16px;
-        font-weight: 600;
+    .searcheng {
+        /* Make search bar responsive and center it */
+        width: 93%;
+        max-width: 500px;
+        margin-left: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+    }
+
+    .FirstSection h3 {
+        width: auto;
+        font-size: 22px;
         line-height: 1.2;
-        margin-top: 5px;
-        text-align: center;
+        margin: -5px;
+        margin-top: 15px;
+        color: #333435;
+        margin-left: 300px;
     }
 
-    /* 6. Box 05 (Banner/Footer): Full width */
+    .button {
+        width: 93%;
+        max-width: 500px;
+        margin-left: -2px;
+        height: 50px;
+        line-height: 30px;
+        /* Fix line-height for mobile button text */
+        padding-bottom: 0;
+        padding: 10px 0;
+        /* Adjust padding to look better */
+    }
+
+    /* 3. Two-Column Grid Arrangement for ALL Card Sections */
+
+    /* Apply Grid to both primary card sections */
+    .SecondSetion,
+    .BoxSection {
+        /* Convert from Flex to Grid */
+        display: grid;
+        /* Define two columns of equal size (1fr) */
+        grid-template-columns: 1fr 1fr;
+        /* Set spacing between grid items */
+        gap: 15px;
+        /* Ensure section is full width and centered */
+        width: 95%;
+        margin: 20px auto;
+        justify-content: unset;
+        /* Override flex justification */
+    }
+
+    /* 4. Card Sizing Adjustments */
+
+    /* Apply responsive sizing to all card elements */
+    .Box01,
+    .Box02,
+    .Box03,
+    .Box04,
+    .cardBox {
+        /* Cards fill the grid cell space */
+        width: 100%;
+        height: auto;
+        /* Let content or min-height determine vertical size */
+        min-height: 150px;
+        /* Ensures a minimum height */
+
+        /* Standardize padding for mobile */
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* 5. Full Width for Wide Sections (like Box05 header) */
     .Box05 {
         width: 100%;
-        height: 60px;
-        /* Reduced height */
-        border-radius: 10px;
-        /* Round all corners for mobile */
-        margin-top: 30px;
-        box-sizing: border-box;
+        margin-left: 0;
+        border-radius: 10px 10px 0px 0px;
     }
 
-    .polyGon {
-        /* Hide or reposition if it's a decorative element */
-        display: none;
-    }
-
+    /* 6. Text and Nested Element Adjustments */
     .h3thirdSection {
+        /* Make text section take full width and remove margin */
         width: 100%;
-        font-size: 16px;
-        line-height: 1.4;
-        margin: 0;
+        margin-left: 0;
+        line-height: normal;
         padding: 10px;
-        box-sizing: border-box;
+        font-size: 20px;
     }
 
-    /* 7. Card Section (BoxSection): Switch to Two Columns */
-    .BoxSection {
-        display: flex; /* Ensure display flex is used */
-        flex-direction: row; /* CRITICAL: Change from column to row */
-        flex-wrap: wrap; /* Allows cards to wrap onto the next line */
-        justify-content: space-between; /* Space out the two columns */
-        gap: 10px; /* Reduced gap between rows and columns */
-        margin-top: 15px;
-        padding: 0 5px;
-    }
-
-    .cardBox {
-        /* CRITICAL: Set width to slightly less than 50% to accommodate the gap */
-        width: calc(50% - 5px); 
-        
-        /* Keep existing styles, but ensure centering for content */
-        height: 200px; /* Set a consistent height for a clean grid */
-        padding: 20px;
-        box-sizing: border-box;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-        border-radius: 8px;
-        
-        /* Optional: Use Flexbox to center content inside the card */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
-    }
-
-    /* Image Fitting: Apply styles to ensure images look good in the smaller cards */
+    /* Card images should also fill their container and be responsive */
     .card-image1,
     .card-image2,
     .card-image3,
-    .card-image4,
-    .cardBox img {
-     width: 190px;
-     height: 170px;
-  
-        margin-top: 20px; /* Adjust vertical position */
+    .card-image4 {
+        width: 90%;
+        height: auto;
         display: block;
+        /* Ensures it can be centered with margin */
+        margin: 10px auto;
+        /* Center the image within the card */
+    }
+
+    /* Move the polygon icon (assuming it's relative to Box05) */
+    .polyGon {
+        margin-left: auto;
+        margin-right: -390px;
+        margin-top: -200px;
     }
 }
